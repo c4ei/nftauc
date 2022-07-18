@@ -23,10 +23,19 @@ const BNB_Testnet: INetwork = {
     scanURL: "https://testnet.bscscan.com/"
 };
 
+const C4EI_Main: INetwork = {
+    name: "C4EI Main",
+    rpc: "https://rpc.c4ei.net/",
+    id: 21004,
+    symbol: "C4EI",
+    scanURL: "https://exp.c4ei.net/"
+};
+
 // Deberiamos tener un archivo para mostrar todos las Networks disponibles.
 const Networks: INetwork[] = [
     Ethereum_Rinkeby,
-    BNB_Testnet
+    BNB_Testnet,
+    C4EI_Main
 ];
 
 export const getNetwork = (id: number): any => {

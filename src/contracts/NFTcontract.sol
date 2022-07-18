@@ -9,7 +9,7 @@ contract ProyectoNFT is ERC721 {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() ERC721("Facu NFT", "FNFT") {}
+    constructor() ERC721("C4EI NFT", "CNFT") {}
 
     // NFTs
     mapping(uint256 => string) public getNFTname; // getNFTname[tokenID] => name
