@@ -17,7 +17,8 @@ export const connectNetwork: WarningProps = {
 
 export const createNFT: WarningProps = {
     props: {
-        photoURL: 'https://i.ibb.co/QXdSnMh/SHH.png',
+        // photoURL: 'https://i.ibb.co/QXdSnMh/SHH.png',
+        photoURL: 'https://i.ibb.co/dKbPkVt/c4eix200t-Logo.png',
         label: "You don't have any NFT",
         button: {
             href: '/createNFT',
