@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ProjectNFTProvider>
       <ChakraProvider theme={theme}>
+        {/* <>{...pageProps}</> */}
         <Component {...pageProps} />
       </ChakraProvider>
     </ProjectNFTProvider>

@@ -10,7 +10,7 @@ const Contract = require('web3-eth-contract');
 // Contracts Address
 const CONTRACT_ADDRESS_RINKEBY = "0xb0CAB79aDDA739709cF6715bee18632aA525C772"; //"0x92D27E13EeC8Cce8E05eEA7f6ba7b2FCfc71e878";
 const CONTRACT_ADDRESS_BNB_TESTNET = "0x5eb88f53d9dC788FA2EEf5157654cB3Cf13eAa8B";
-const CONTRACT_ADDRESS_C4EI_MAINNET = "0x35971Da6A0279a711507bF7482530BE34738668E";
+const CONTRACT_ADDRESS_C4EI_MAINNET = "0x88f2b6A7fd2f03882ccFA41786aFb83C3b75241d";
 
 
 export const loadData = async () => {
@@ -78,7 +78,7 @@ export const getOffer = async (ContractNFT, tokenID, offerID) => {
 export const getOffers = async (ContractNFT, tokenID) => {
     var offers = [];
     const totalOffersOfNFT = await ContractNFT.methods.getOfferID(tokenID).call();
-    const lastOfferIDAcepted = await ContractNFT.methods.lastOfferIDAcepted(tokenID).call(); 
+    const lastOfferIDAcepted = await ContractNFT.methods.lastOfferIDAccepted(tokenID).call(); 
 
     for (var i = lastOfferIDAcepted; i < totalOffersOfNFT; i++) {
         const offer = await getOffer(ContractNFT, tokenID, i);

@@ -66,13 +66,13 @@ export const NavBar = (props) => {
     return(
         <Container maxW='100%' p={4} style={{position:'fixed', zIndex: 100}} bg={bg}>
             <HStack>
-                <Link href="https:facundo-carballo.web.app">
+                {/* <Link href="https:facundo-carballo.web.app">
                     <Image
                     boxSize="50px"
                     src={props.photoURL}
                     alt="Facundo Carballo"
                     />
-                </Link>
+                </Link> */}
                 
                 { props.title != '' ? <Title title={props.title}/> : null }
 

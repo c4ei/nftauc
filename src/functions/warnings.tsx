@@ -10,7 +10,8 @@ export const connectWallet: WarningProps = {
 export const connectNetwork: WarningProps = {
     props: {
         photoURL: 'https://i.ibb.co/Dt6sfXH/warning.png',
-        label: 'Please connect to Binance Smart Chain Testnet or Rinkeby Testnet',
+        // label: 'Please connect to Binance Smart Chain Testnet or Rinkeby Testnet',
+        label: 'Please connect to C4EI Mainnet',
     }
 };
 

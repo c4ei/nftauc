@@ -399,6 +399,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getTokenID",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -710,7 +723,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"FullContract.sol": "ProyectoNFT"
+			"C4eiContract.sol": "C4eiNFT"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -724,12 +737,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"FullContract.sol": {
-			"keccak256": "0xf6edce2aef3609be5fbb6e008af672e48cc39fe5c42785b8edd913138e938b71",
+		"C4eiContract.sol": {
+			"keccak256": "0x4570c74cefa3d61f065e40a1289c785c73da6f093dd73b7f89079df78870c844",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e9386ebbf59db453ebd24ee729584f554deab1139e5a2483f893bce07bd9845a",
-				"dweb:/ipfs/QmSberwASVdG84W1ZmEwMPxk1zarq3UxwQdNRZ9ZUnDUS4"
+				"bzz-raw://decb115d6015e12818c438ff289cfc797e9d7445bb13c2fe9b5f7f73b92e4e77",
+				"dweb:/ipfs/QmXxN5qkvPSLMPTG4d4GUsYMgUJMUgmH5rokfCFM7ajLqi"
 			]
 		}
 	},

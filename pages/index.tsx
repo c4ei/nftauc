@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Proyecto NFT</title>
+        <title>C4EI NFT Auction</title>
         <meta name="description" content="In this dapp you can create your own NFT, buy NFT from other users and also sell your NFTs." />
         <link rel="icon" href="/favicon.ico" />
       </Head>

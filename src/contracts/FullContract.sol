@@ -518,11 +518,11 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
     ) internal virtual {}
 }
 
-contract ProyectoNFT is ERC721 {
+contract C4eiNFT is ERC721 {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() ERC721("C4EI NFT", "FNTF") {}
+    constructor() ERC721("C4EI NFT", "CNTF") {}
 
     // NFTs
     mapping(uint256 => string) public getNFTname; // getNFTname[tokenID] => name
@@ -550,6 +550,9 @@ contract ProyectoNFT is ERC721 {
     uint256[] private emptyArray;
 
     // Funcs
+    function getTokenID() public view returns(uint256) {
+        return _tokenIds.current();
+    }
 
     function createNFT(
         string memory name, 
