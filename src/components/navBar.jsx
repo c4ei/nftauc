@@ -162,7 +162,7 @@ export const NavBar = (props) => {
                         </Button> : 
                         <VStack>
                             <Text>Address: {getShortAddressWallet()}</Text>
-                            <Text>{cryptoAmount} {network.id == 4 ? 'ETH' : 'BNB'}</Text>
+                            <Text>{cryptoAmount} {network.id == 21004 ? 'C4EI' : network.id == 4 ? 'ETH' : 'BNB'}</Text>
                             <Text>Net ID: {network.id}</Text>
                         </VStack>
                     }

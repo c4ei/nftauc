@@ -58,7 +58,7 @@ export const OffertButton = () => {
                 <Input
                 value={amount}
                 onChange={handleChange}
-                placeholder={network.id == 4 ? "Amount of ETH to Offer" : "Amount of BNB to Offer"}
+                placeholder={network.id == 21004 ? "Amount of C4EI to Offer" : network.id == 4 ? "Amount of ETH to Offer" : "Amount of BNB to Offer"}
                 border='none'
                 />
                 <Button w='30%' h='full' bg='#A0AEC0' borderRadius={3} onClick={handleOffer} fontWeight='bold' fontSize={{lg: '3xl', md: '3xl', sm: 'md', base: 'md'}}>
