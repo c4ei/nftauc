@@ -1,6 +1,6 @@
 import Web3 from 'web3';
 import NFTContract from '../contracts/ABI/contractABI.json';
-import NFTContractKLYA from '../contracts/ABI/contractABI_Klay.json';
+import NFTContractKLAY from '../contracts/ABI/contractABI_Klay.json';
 import { getNetwork } from './getNetwork';
 
 
@@ -34,8 +34,8 @@ export const loadData = async () => {
     }
 
     const ContractNFT = new Contract(
-        NFTContract.output.abi, 
-        networkID == 21004 ? ContractAddress : NFTContractKLYA
+        networkID == 21004 ? NFTContract.output.abi : NFTContractKLAY.output.abi, 
+        ContractAddress
     );
     
     const myNFTbalance = await ContractNFT.methods.balanceOf(accountAddress).call();
