@@ -95,7 +95,9 @@ export const NavBar = (props) => {
                     <Box display={{ lg: 'flex', md: 'none', sm: 'none', base: 'none' }} border='1px' borderColor={backColor} borderRadius={5}> 
                         <VStack w='100px'>
                             <Spacer />
-                            <Heading fontSize='md'>{cryptoAmount} {network.id == 21004 ? 'C4EI' : network.id == 4 ? 'ETH' : 'BNB'}</Heading>
+                            <Heading fontSize='md'>{cryptoAmount} {network.id == 21004 ? 'C4EI' : 
+                            network.id == 8217 ? 'KLAY' :
+                            network.id == 4 ? 'ETH' : 'BNB'}</Heading>
                             <Spacer />
                         </VStack>
                         <Box w='75px' bg={backColor} borderRadius={5}>
@@ -162,7 +164,9 @@ export const NavBar = (props) => {
                         </Button> : 
                         <VStack>
                             <Text>Address: {getShortAddressWallet()}</Text>
-                            <Text>{cryptoAmount} {network.id == 21004 ? 'C4EI' : network.id == 4 ? 'ETH' : 'BNB'}</Text>
+                            <Text>{cryptoAmount} {network.id == 21004 ? 'C4EI' : 
+                                network.id == 8217 ? 'KLAY' :
+                                network.id == 4 ? 'ETH' : 'BNB'}</Text>
                             <Text>Net ID: {network.id}</Text>
                         </VStack>
                     }

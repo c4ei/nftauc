@@ -11,7 +11,7 @@ const Contract = require('web3-eth-contract');
 const CONTRACT_ADDRESS_RINKEBY = "0xb0CAB79aDDA739709cF6715bee18632aA525C772"; //"0x92D27E13EeC8Cce8E05eEA7f6ba7b2FCfc71e878";
 const CONTRACT_ADDRESS_BNB_TESTNET = "0x5eb88f53d9dC788FA2EEf5157654cB3Cf13eAa8B";
 const CONTRACT_ADDRESS_C4EI_MAINNET = "0x88f2b6A7fd2f03882ccFA41786aFb83C3b75241d";
-
+const CONTRACT_ADDRESS_KLAY_MAINNET = "0xBa28Ac5baEedF1B25bB85a2Cbc0E18fD242E77BF";
 
 export const loadData = async () => {
 
@@ -20,7 +20,9 @@ export const loadData = async () => {
     const { accountAddress, cryptoAmount, networkID } = await loadAccountInfo();
 
     // const ContractAddress = networkID == 97 ? CONTRACT_ADDRESS_BNB_TESTNET : CONTRACT_ADDRESS_RINKEBY;
-    const ContractAddress = networkID == 21004 ? CONTRACT_ADDRESS_C4EI_MAINNET : networkID == 97 ? CONTRACT_ADDRESS_BNB_TESTNET : CONTRACT_ADDRESS_RINKEBY;
+    const ContractAddress = networkID == 21004 ? CONTRACT_ADDRESS_C4EI_MAINNET : 
+        networkID == 8217 ? CONTRACT_ADDRESS_KLAY_MAINNET :
+        networkID == 97 ? CONTRACT_ADDRESS_BNB_TESTNET : CONTRACT_ADDRESS_RINKEBY;
 
     const Network = getNetwork(networkID);
     // Set Provider

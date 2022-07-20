@@ -8,7 +8,7 @@ import { ShowMyNFTs } from './showMyNFTs'
 export const MyNFTs = () => {
     const { addressAccount, network, nftsOfUser } = useProjectNFTProvider();
     // const isNetworkOK = (id) => { return (id == 97) || (id == 4) || (id == 21004) };
-    const isNetworkOK = (id) => { return (id == 21004) };
+    const isNetworkOK = (id) => { return (id == 21004) || (id == 8217) };
 
     const haveNFTs = () => (nftsOfUser == null || nftsOfUser.length == 0);
     return (

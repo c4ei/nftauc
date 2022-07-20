@@ -31,11 +31,20 @@ const C4EI_Main: INetwork = {
     scanURL: "https://exp.c4ei.net/"
 };
 
+const KLAY_Main: INetwork = {
+    name: "KLAY Main",
+    rpc: "https://public-node-api.klaytnapi.com/v1/cypress/",
+    id: 8217,
+    symbol: "KLAY",
+    scanURL: "https://scope.klaytn.com/"
+};
+
 // Deberiamos tener un archivo para mostrar todos las Networks disponibles.
 const Networks: INetwork[] = [
     Ethereum_Rinkeby,
     BNB_Testnet,
-    C4EI_Main
+    C4EI_Main,
+    KLAY_Main
 ];
 
 export const getNetwork = (id: number): any => {
